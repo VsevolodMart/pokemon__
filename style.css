@@ -1,0 +1,566 @@
+html { height: 101% }
+body{
+  background-color: #ededed;
+}
+
+
+.cover {
+  width: 100%;
+  height: 104%;
+  background-color: #ededed;
+}
+
+h1 {
+  display: block;
+  width: 540px;
+  margin: auto;
+  font-size: 56px;
+  font-family: 'Chau Philomene One', sans-serif;
+  text-align: center;
+  background-color: white;
+  border-radius: 6px;
+}
+
+#all {
+  display: block;
+  margin: 2.916% 0% 0% 5.208%;/*56px 0px 0px 100px*/
+  width: 52.0833%;/*1000px*/
+  height: auto;
+  
+}
+
+.bigContainer {
+  display: block;
+  margin: 0% 0% 0% 0%;
+  width: auto;
+  height: auto;
+}
+
+.pokeValues {
+  position: fixed;
+  left: auto;
+  top: 16.5%; /* 250px*/
+  right: 18.229%; /*350px*/
+  display: block;
+  min-width: 300px; /*300px*/
+  max-width: 300px; /*300px*/
+  min-height: 600px; /*600px*/
+  max-height: 600px; /*600px*/
+  /*border: 2px solid black;*/
+  z-index: 999;
+  background-color: #ffffff;
+  border-radius: 6px
+}
+
+.pokeValues img {
+  display: block;
+  width: 83.333%;/*250px*/
+  height: 83.333%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8.333%; /*25px*/
+  /*border: 1px solid black;*/
+  background-color: #ededed;
+  border-radius: 6px
+}
+
+.pokeValues h3 {
+  font-size: 1.17em;
+  text-align: center;
+  font-family: 'Chau Philomene One', sans-serif;
+  color: #5a5a5a;
+}
+table, th, td {
+  border: 1px solid #ededed;
+  width: 83.333%;
+  border-collapse: collapse;
+  margin: 0% auto 0% auto;/*0px 0px 0px 23px 7.555%*/
+  padding: 0.740% 0% 0.740% 0%; /*2px 0px 2px 0px*/
+  font-size: 1.12em;
+  font-family: 'Chau Philomene One', sans-serif;
+  color: #5a5a5a;
+}
+table{
+  margin: 0% auto 0% auto;
+}
+
+.hide-layout {
+  position: fixed;
+  display: none;
+  background: #000;
+  bottom: 0;
+  filter: progid: DXImageTransform.Microsoft.Alpha(opacity=50); /* opacity for IE */
+  height: 100%;
+  opacity: 0.5;
+  top: 0;
+  width: 100%;
+  z-index: 998;
+  
+}
+
+
+/* General classes End */
+
+.pokemonsContainer {
+  display: block;
+  width: 250px;
+  height: 370px;
+  /*border: 2px solid black;*/
+  background-color: #ffffff;
+  border-radius: 6px;
+  float: left;
+  margin: 30px 0px 0px 30px;
+}
+
+
+.pokemonsContainer img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  /*border: 1px solid black;*/
+  border-radius: 6px;
+  background-color: #F2F2F2;
+  border: 
+}
+
+.pokemonsContainer h3 {
+  text-align: center;
+  font-family: 'Chau Philomene One', sans-serif;
+  color: #5a5a5a;
+  margin: 5px 0px 10px 0px;
+}
+
+.getMore {
+  display: block;
+  width: 810px;
+  height: 80px;
+  background-color: #30A7D7;
+  float: left;
+  clear: both;
+  margin: 10px 0px 20px 30px;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.getMore p {
+  font-size: 30px;
+  margin: 20px 0px 20px 0px;
+  color: white;
+  font-family: 'Chau Philomene One', sans-serif;
+  font-weight: 500;
+}
+
+
+/*General classes End */
+#bulbazar12{
+  display: block;
+  width: 250px;
+  height: 370px;
+  border: 2px solid black;
+  float: left;
+  margin: 30px 0px 0px 30px;
+}
+
+/*Type Styles*/
+
+.normal {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  /*text-shadow: 1px 1px 1px #bab8b8;*/
+  width: 110px;
+  height: 26px;
+  font-size: 20px;
+  font-weight: 100;
+  font-family: 'Roboto Condensed', sans-serif;
+  float: left;
+  margin: 2px 0px 2px 10px;
+  padding-top: 0px;
+  border-radius: 6px;
+  background-color: #A4ACAF;
+  background: -moz-linear-gradient(top, #aab0b2, #A4ACAF);
+  background: -webkit-linear-gradient(top, #aab0b2, #A4ACAF);
+  background: -o-linear-gradient(top, #aab0b2, #A4ACAF);
+  color: white;
+}
+
+.fire {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  /*text-shadow: 1px 1px 1px #bab8b8;*/
+  width: 110px;
+  height: 26px;
+  font-size: 20px;
+  font-weight: 100;
+  font-family: 'Roboto Condensed', sans-serif;
+  float: left;
+  margin: 2px 0px 2px 10px;
+  padding-top: 0px;
+  border-radius: 6px;
+  background-color: #FD7D24;
+  background: -moz-linear-gradient(top, #ff8530, #FD7D24);
+  background: -webkit-linear-gradient(top, #FD7D24, #FD7D24);
+  background: -o-linear-gradient(top, #FD7D24, #FD7D24);
+  color: white;
+}
+
+.water {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  /*text-shadow: 1px 1px 1px #b9b9b9;*/
+  width: 110px;
+  height: 26px;
+  font-size: 20px;
+  font-weight: 100;
+  font-family: 'Roboto Condensed', sans-serif;
+  float: left;
+  margin: 2px 0px 2px 10px;
+  padding-top: 0px;
+  border-radius: 6px;
+  background-color: #4592C4;
+  background: -moz-linear-gradient(top, #4794c6, #4592C4);
+  background: -webkit-linear-gradient(top, #4592C4, #4592C4);
+  background: -o-linear-gradient(top, #4592C4, #4592C4);
+  color: white;
+}
+
+.grass {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  /*text-shadow: 1px 1px 1px #b5b5b5;*/
+  width: 110px;
+  height: 26px;
+  font-size: 20px;
+  font-weight: 100;
+  font-family: 'Roboto Condensed', sans-serif;
+  float: left;
+  margin: 2px 0px 2px 10px;
+  padding-top: 0px;
+  border-radius: 6px;
+  background-color: #9BCC50;
+  background: -moz-linear-gradient(top, #9ccd51, #9BCC50);
+  background: -webkit-linear-gradient(top, #9ccd51, #9BCC50);
+  background: -o-linear-gradient(top, #9ccd51, #9BCC50);
+  color: white;
+}
+
+.electric {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  /*text-shadow: 1px 1px 1px #b7b7b7;*/
+  width: 110px;
+  height: 26px;
+  font-size: 20px;
+  font-weight: 100;
+  font-family: 'Roboto Condensed', sans-serif;
+  float: left;
+  margin: 2px 0px 2px 10px;
+  padding-top: 0px;
+  border-radius: 6px;
+  background-color: #EED535;
+  background: -moz-linear-gradient(top, #efd636, #EED535);
+  background: -webkit-linear-gradient(top, #efd636, #EED535);
+  background: -o-linear-gradient(top, #efd636, #EED535);
+  color: #1b1b1b;
+}
+
+.ice {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  /*text-shadow: 1px 1px 1px #b5b5b5;*/
+  width: 110px;
+  height: 26px;
+  font-size: 22px;
+  font-family: 'Roboto Condensed', sans-serif;
+  float: left;
+  margin: 2px 0px 2px 10px;
+  padding-top: 0px;
+  border-radius: 4px;
+  background-color: #51C4E7;
+  background: -moz-linear-gradient(top, #51C4E7, #51C4E7);
+  background: -webkit-linear-gradient(top, #51C4E7, #51C4E7);
+  background: -o-linear-gradient(top, #51C4E7, #51C4E7);
+  color: white;
+}
+
+.fighting {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  /*text-shadow: 1px 1px 1px #b8b8b8;*/
+  width: 110px;
+  height: 26px;
+  font-size: 20px;
+  font-weight: 100;
+  font-family: 'Roboto Condensed', sans-serif;
+  float: left;
+  margin: 2px 0px 2px 10px;
+  padding-top: 0px;
+  border-radius: 4px;
+  background-color: #D56723;
+  background: -moz-linear-gradient(top, #d66824, #D56723);
+  background: -webkit-linear-gradient(top, #d66824, #D56723);
+  background: -o-linear-gradient(top, #d66824, #D56723);
+  color: white;
+}
+
+.poison {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  /*text-shadow: 1px 1px 1px #b8b8b8;*/
+  width: 110px;
+  height: 26px;
+  font-size: 20px;
+  font-weight: 100;
+  font-family: 'Roboto Condensed', sans-serif;
+  float: left;
+  margin: 2px 0px 2px 10px;
+  padding-top: 0px;
+  border-radius: 6px;
+  background-color: #B97FC9;
+  background: -moz-linear-gradient(top, #B97FC9, #B97FC9);
+  background: -webkit-linear-gradient(top, #B97FC9, #B97FC9);
+  background: -o-linear-gradient(top, #B97FC9, #B97FC9);
+  color: white;
+}
+
+.ground {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  /*text-shadow: 1px 1px 1px #b7b7b7;*/
+  width: 110px;
+  height: 26px;
+  font-size: 20px;
+  font-weight: 100;
+  font-family: 'Roboto Condensed', sans-serif;
+  float: left;
+  margin: 2px 0px 2px 10px;
+  padding-top: 0px;
+  border-radius: 4px;
+  background-color: #F7DE3F;
+  background: -moz-linear-gradient(top, #F7DE3F, #AB9842);
+  background: -webkit-linear-gradient(top, #F7DE3F, #AB9842);
+  background: -o-linear-gradient(top, #F7DE3F, #AB9842);
+  color: white;
+}
+
+.flying {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  /*text-shadow: 1px 1px 1px #b9b9b9;*/
+  width: 110px;
+  height: 26px;
+  font-size: 20px;
+  font-weight: 100;
+  font-family: 'Roboto Condensed', sans-serif;
+  float: left;
+  margin: 2px 0px 2px 10px;
+  padding-top: 0px;
+  border-radius: 6px;
+  background-color: #A890F0;
+  background: -moz-linear-gradient(top, #3DC7EF, #BDB9B8);
+  background: -webkit-linear-gradient(top, #3DC7EF, #BDB9B8);
+  background: -o-linear-gradient(top, #3DC7EF, #BDB9B8);
+  color: white;
+}
+
+.psychic {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  /*text-shadow: 1px 1px 1px #b7b7b7;*/
+  width: 120px;
+  height: 26px;
+  font-size: 20px;
+  font-weight: 100;
+  font-family: 'Roboto Condensed', sans-serif;
+  float: left;
+  margin: 2px 0px 2px 10px;
+  padding-top: 0px;
+  border-radius: 6px;
+  background-color: #F366B9;
+  background: -moz-linear-gradient(top, #F366B9, #ff6c98);
+  background: -webkit-linear-gradient(top, #F366B9, #F85888);
+  background: -o-linear-gradient(top, #F366B9, #F85888);
+  color: white;
+}
+
+.bug {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  /*text-shadow: 1px 1px 1px #b7b7b7;*/
+  width: 110px;
+  height: 26px;
+  font-size: 20px;
+  font-weight: 100;
+  font-family: 'Roboto Condensed', sans-serif;
+  float: left;
+  margin: 2px 0px 2px 10px;
+  padding-top: 0px;
+  border-radius: 6px;
+  background-color: #729F3F;
+  background: -moz-linear-gradient(top, #729F3F, #729F3F);
+  background: -webkit-linear-gradient(top, #729F3F, #729F3F);
+  background: -o-linear-gradient(top, #729F3F, #729F3F);
+  color: white;
+}
+
+.rock {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  /*text-shadow: 1px 1px 1px #b9b9b9;*/
+  width: 110px;
+  height: 26px;
+  font-size: 20px;
+  font-weight: 100;
+  font-family: 'Roboto Condensed', sans-serif;
+  float: left;
+  margin: 2px 0px 2px 10px;
+  padding-top: 0px;
+  border-radius: 4px;
+  background-color: #A38C21;
+  background: -moz-linear-gradient(top, #A38C21, #A38C21);
+  background: -webkit-linear-gradient(top, #A38C21, #A38C21);
+  background: -o-linear-gradient(top, #A38C21, #A38C21);
+  color: white;
+}
+
+.ghost {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  /*text-shadow: 1px 1px 1px #b9b9b9;*/
+  width: 110px;
+  height: 26px;
+  font-size: 20px;
+  font-weight: 100;
+  font-family: 'Roboto Condensed', sans-serif;;
+  float: left;
+  margin: 2px 0px 2px 10px;
+  padding-top: 0px;
+  border-radius: 6px;
+  background-color: #7B62A3;
+  background: -moz-linear-gradient(top, #7B62A3, #7B62A3);
+  background: -webkit-linear-gradient(top, #7B62A3, #7B62A3);
+  background: -o-linear-gradient(top, #7B62A3, #7B62A3);
+  color: white;
+}
+
+.dark {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  /*text-shadow: 1px 1px 1px #b6b6b6;*/
+  width: 110px;
+  height: 26px;
+  font-size: 20px;
+  font-weight: 100;
+  font-family: 'Roboto Condensed', sans-serif;
+  float: left;
+  margin: 2px 0px 2px 10px;
+  padding-top: 0px;
+  border-radius: 4px;
+  background-color: #707070;
+  background: -moz-linear-gradient(top, #707070, #707070);
+  background: -webkit-linear-gradient(top, #707070, #707070);
+  background: -o-linear-gradient(top, #707070, #707070);
+  color: white;
+}
+
+.dragon {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  /*text-shadow: 1px 1px 1px #b7b7b7;*/
+  width: 120px;
+  height: 26px;
+  font-size: 20px;
+  font-weight: 100;
+  font-family: 'Roboto Condensed', sans-serif;
+  float: left;
+  margin: 2px 0px 2px 10px;
+  padding-top: 0px;
+  border-radius: 6px;
+  background-color: #7038F8;
+  background: -moz-linear-gradient(top, #7038F8, #7a43ff);
+  background: -webkit-linear-gradient(top, #7038F8, #7038F8);
+  background: -o-linear-gradient(top, #7038F8, #7038F8);
+  color: white;
+}
+
+.steel {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  /*text-shadow: 1px 1px 1px #b8b8b8;*/
+  width: 120px;
+  height: 26px;
+  font-size: 20px;
+  font-weight: 100;
+  font-family: 'Roboto Condensed', sans-serif;
+  float: left;
+  margin: 2px 0px 2px 10px;
+  padding-top: 0px;
+  border-radius: 6px;
+  background-color: #B8B8D0;
+  background: -moz-linear-gradient(top, #B8B8D0, #c7c7e1);
+  background: -webkit-linear-gradient(top, #B8B8D0, #B8B8D0);
+  background: -o-linear-gradient(top, #B8B8D0, #B8B8D0);
+  color: white;
+}
+
+.fairy {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  /*text-shadow: 1px 1px 1px #b8b8b8;*/
+  width: 110px;
+  height: 26px;
+  font-size: 20px;
+  font-weight: 100;
+  font-family: 'Roboto Condensed', sans-serif;
+  float: left;
+  margin: 2px 0px 2px 10px;
+  padding-top: 0px;
+  border-radius: 6px;
+  background-color: #FDB9E9;
+  background: -moz-linear-gradient(top, #FDB9E9, #FDB9E9);
+  background: -webkit-linear-gradient(top, #FDB9E9, #FDB9E9);
+  background: -o-linear-gradient(top, #FDB9E9, #FDB9E9);
+  color: white;
+}
+
+
+/*Type Styles*/
